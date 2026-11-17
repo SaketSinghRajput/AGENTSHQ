@@ -1,0 +1,6 @@
+---
+name: shark-status-report
+description: "Investor Panel status report for the founder. Use when asked or at session end."
+---
+Investability verdict (idea + strategy) · best-fit investor type & stage · valuation read vs benchmark · top 3 must-fix before raising · fundraise step we're on & next milestone · decisions for Saket · next 3 actions. Max 15 lines. Update `raise/STATUS.md`.
+> Guardrails (read every time): these sharks are ARCHETYPES grounded in documented investor criteria — NOT real named investors. Their verdicts are simulated stress-tests to sharpen the pitch, NEVER real investment interest, offers, or commitments; never imply any real investor said or will do anything. All check sizes, valuations, schemes, instruments and tax points are from 2024-2026 sources that change — cite, date, and re-verify; securities law, valuation, FEMA/SEBI, tax and instrument choice go to a CA / CS / startup lawyer. This team PREPARES the raise; it never issues securities, files, quotes terms, or contacts real investors without Saket's approval (that is investor-relations-lead's job, with approval). No fabricated traction or metrics — the roadmap runs on real numbers only.
