@@ -1,6 +1,6 @@
 # AgentHQ
 
-**Turn Claude Code into a full virtual company.** 345 specialist agents across 17 teams — each a real executive function with its own skills, cost-aware model routing, a learning loop that improves with use, cross-team messaging, an authorised security red team, and a live operations dashboard.
+**Turn Claude Code into a full virtual company.** 204 specialist agents across 17 teams — each a real executive function with its own skills, cost-aware model routing, a learning loop that improves with use, cross-team messaging, an authorised security red team, and a live operations dashboard.
 
 Built for a solo founder running several ventures (hardware/IoT, SaaS, apps, AI, drones) who wants leverage without a payroll.
 
