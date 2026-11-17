@@ -1,6 +1,6 @@
 # AgentHQ documentation
 
-AgentHQ turns Claude Code into a full virtual company: **204 agents** across **14 teams**, each with role skills, model routing, a learning loop, cross-team messaging, a security red team, and a live dashboard.
+AgentHQ turns Claude Code into a full virtual company: **345 agents** across **17 teams**, each with role skills, model routing, a learning loop, cross-team messaging, a security red team, a QA/reliability team, a synthetic customer panel, an investor panel, and a live dashboard.
 
 ## Read in this order
 1. [Installation](installation.md)
@@ -22,7 +22,7 @@ AgentHQ turns Claude Code into a full virtual company: **204 agents** across **1
 | `/ceo` | CEO — Office of the CEO | 13 | 17 | [doc](teams/ceo.md) |
 | `/cto` | CTO — Engineering | 32 | 35 | [doc](teams/cto.md) |
 | `/cpo` | CPO — Product | 10 | 13 | [doc](teams/cpo.md) |
-| `/cdo` | CDO — Data & AI | 10 | 13 | [doc](teams/cdo.md) |
+| `/cdo` | Chief Data & AI | 10 | 13 | [doc](teams/cdo.md) |
 | `/cmo` | CMO — Marketing | 25 | 30 | [doc](teams/cmo.md) |
 | `/cro` | CRO — Sales & Revenue | 12 | 15 | [doc](teams/cro.md) |
 | `/cfo` | CFO — Finance | 20 | 23 | [doc](teams/cfo.md) |
@@ -30,8 +30,11 @@ AgentHQ turns Claude Code into a full virtual company: **204 agents** across **1
 | `/chro` | CHRO — HR | 16 | 19 | [doc](teams/chro.md) |
 | `/gc` | GC — Legal | 14 | 17 | [doc](teams/gc.md) |
 | `/agency` | Agency — Client Services | 12 | 15 | [doc](teams/agency.md) |
-| `/redteam` | Red Team — Security testing | 13 | 5 | [doc](teams/redteam.md) |
-| `(shared)` | Core — Shared workers & self-improvement | 7 | 5 | [doc](teams/core.md) |
-| `/hq` | HQ — Front desk / router | 0 | 1 | [doc](teams/hq.md) |
+| `/redteam` | Red Team — security testing | 13 | 5 | [doc](teams/redteam.md) |
+| `/qa` | QA & Reliability — testing | 13 | 15 | [doc](teams/qa.md) |
+| `/panel` | Customer Panel — persona testers | 33 | 5 | [doc](teams/panel.md) |
+| `/sharks` | Investor Panel — the sharks | 95 | 7 | [doc](teams/sharks.md) |
+| `(shared)` | Core — workers & self-improvement | 7 | 5 | [doc](teams/core.md) |
+| `/hq` | HQ — front desk / router | 0 | 1 | [doc](teams/hq.md) |
 
-Totals: **204 agents**, **232 skills**.
+Totals: **345 agents**, **259 skills**, **17 teams**.

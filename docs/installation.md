@@ -23,5 +23,5 @@ Then open a **new** terminal in this folder and run `claude`, then type `/hq`.
 Open `D:\project\Agents` in Claude Code. `CLAUDE.md` at the root is the operating manual every agent reads. Agents write their working output into the runtime folders (`docs/`, `finance/`, `ops/`, `comms/`, `security/`, `learnings/`, …) described in [architecture.md](architecture.md).
 
 ## Verify
-- `claude` → `/agents` should list ~204 agents.
+- `claude` → `/agents` should list ~345 agents.
 - Start any team (e.g. `/cto` with a small task). The dashboard should open at `http://127.0.0.1:4765/`.

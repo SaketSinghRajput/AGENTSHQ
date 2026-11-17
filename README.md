@@ -1,6 +1,6 @@
 # AgentHQ
 
-**Turn Claude Code into a full virtual company.** 204 specialist agents across 14 teams — each a real executive function with its own skills, cost-aware model routing, a learning loop that improves with use, cross-team messaging, an authorised security red team, and a live operations dashboard.
+**Turn Claude Code into a full virtual company.** 204 specialist agents across 17 teams — each a real executive function with its own skills, cost-aware model routing, a learning loop that improves with use, cross-team messaging, an authorised security red team, and a live operations dashboard.
 
 Built for a solo founder running several ventures (hardware/IoT, SaaS, apps, AI, drones) who wants leverage without a payroll.
 
@@ -10,9 +10,9 @@ Built for a solo founder running several ventures (hardware/IoT, SaaS, apps, AI,
 
 | | |
 |---|---|
-| **14 teams** | CEO, CTO, CPO, CDO, CMO, CRO, CFO, COO, CHRO, Legal, Agency, Red Team, Core, HQ |
-| **204 agents** | one specialist per role, each with preloaded skills |
-| **232 skills** | standards & checklists the agents follow |
+| **17 teams** | CEO, CTO, CPO, CDO, CMO, CRO, CFO, COO, CHRO, Legal, Agency, Red Team, Core, HQ |
+| **345 agents** | one specialist per role, each with preloaded skills |
+| **259 skills** | standards & checklists the agents follow |
 | **Model routing** | trivial work → free local model; hard work → Claude Opus |
 | **Learning loop** | agents remember lessons; `/evolve` upgrades skills (you approve) |
 | **Communication** | any agent can message any other; shared board for cross-team work |

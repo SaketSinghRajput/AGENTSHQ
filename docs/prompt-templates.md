@@ -325,3 +325,44 @@ Opens by itself at **http://127.0.0.1:4765/** the moment any team starts working
 
 - Open it manually any time: run `python "%USERPROFILE%\.claude\agenthq\dashboard_server.py"` then visit the address.
 - It didn't open? Make sure the install step (`set-core-settings.ps1`, run by `Install-All-Teams.bat`) finished, and that Python is on PATH.
+
+---
+
+## /qa — Break the app (QA & Reliability)
+
+```
+/qa [what to test]
+App: [name] on [staging URL / repo]   Environment: staging preferred
+Pillars: [chaos/fault-injection · load 1000+ · human-error · concurrency · real-device · usability · negative/boundary · API]
+Phone: [attached? for real-device testing]
+Output: failure catalog + findings by severity + fixes + Go/No-Go
+```
+Examples:
+- `/qa build the failure catalog for SWAFTO, then run human-error and concurrency tests on staging and test it on my phone`
+- `/qa load-test the backend to 1000 concurrent users and find the first bottleneck`
+- `/qa chaos-test resilience: inject DB and dependency failures on staging`
+
+## /panel — Customer verdict (persona panel)
+
+```
+/panel [idea and/or app to test]
+Target customer: [who]   App: [path/URL/screenshots, optional]
+Output: idea verdict + app verdict (to the CEO), champion vs not-for segment, must-fix list
+```
+Examples:
+- `/panel test the SWAFTO idea and the staging app with shopkeeper and adjacent personas`
+- `/panel compare these two onboarding designs across the panel`
+
+## /sharks — Investor panel + raise roadmap
+
+```
+/sharks [venture + stage]
+Idea: [one line]   Stage: [pre-seed/seed/A]   Sector: [..]   Traction: [real numbers]
+Want: [panel verdict / raise roadmap / both]
+Output: idea + strategy verdict (to the CEO), best-fit investor type, valuation read, step-by-step roadmap to the first check
+```
+Examples:
+- `/sharks judge the Zupra idea and strategy at seed, then build my roadmap to a ₹2Cr raise`
+- `/sharks mock partner meeting: grill me with the toughest sharks and list the questions I must prep`
+
+Note: sharks are simulated archetypes, not real investors; verdicts are stress-tests, not offers. Figures are dated — re-verify; securities/tax/FEMA go to a CA/CS/lawyer.
