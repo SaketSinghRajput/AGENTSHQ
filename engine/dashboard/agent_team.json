@@ -202,5 +202,18 @@
 "worker-local": "Core",
 "worker-opus": "Core",
 "worker-sonnet": "Core",
-"worker-verifier": "Core"
+"worker-verifier": "Core",
+"api-abuse-tester": "QA",
+"bug-reporter-triage": "QA",
+"chaos-fault-injection-engineer": "QA",
+"data-integrity-concurrency-tester": "QA",
+"exploratory-tester": "QA",
+"human-error-tester": "QA",
+"load-stress-engineer": "QA",
+"mobile-realworld-tester": "QA",
+"negative-boundary-tester": "QA",
+"qa-reliability-lead": "QA",
+"recovery-failover-tester": "QA",
+"scenario-designer": "QA",
+"usability-accessibility-tester": "QA"
 }

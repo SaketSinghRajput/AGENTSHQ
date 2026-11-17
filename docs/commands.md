@@ -17,6 +17,7 @@ Type a command in Claude Code to switch into that leader's mode. The leader plan
 | `/gc` | General Counsel | Legal: contracts, corporate, IP, privacy, employment law, disputes |
 | `/agency` | Agency MD | Client services: pitches, SOWs, delivery, accounts, utilisation |
 | `/redteam` | Red Team | Authorised security testing of your OWN apps |
+| `/qa` | QA & Reliability | Break the app like real failures & real users (chaos, load, human-error, concurrency) and hand back fixes |
 | `/evolve` | Skill curator | Review usage & memories, propose skill upgrades for approval |
 
 Each leader doc lists its agents and skills: see [docs/teams/](teams/).

@@ -22,6 +22,7 @@ If nothing follows, show this table and ask what Saket needs.
 | /chro | CHRO | HR: hiring, pay, performance, culture, labour codes, POSH |
 | /gc | General Counsel | legal: contracts, corporate, IP, privacy, employment law, disputes |
 | /agency | Agency MD | client services: pitches, SOWs, delivery, accounts, utilisation |
+| `/qa` | QA & Reliability Lead | break the app like real failures & real users: chaos/load/human-error/concurrency testing, then fixes |
 | /redteam | Red Team Lead | authorised security testing of your OWN apps: find & fix vulnerabilities (web, API, mobile, cloud, IoT, LLM) |
 
 Rules everywhere: Saket decides; drafts only for anything external, financial, legal or people-related.

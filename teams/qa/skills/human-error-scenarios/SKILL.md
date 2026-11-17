@@ -1,0 +1,12 @@
+---
+name: human-error-scenarios
+description: "Reproduce the mistakes real (often non-expert) users make and verify the app handles them safely. Use to test flows the way humans actually use them."
+---
+
+# Human Error Scenarios
+
+Probe each and assert correct handling: **double-tap/double-submit** (disable on tap + server idempotency → one charge); **rage-tap on slow network** (debounce, single in-flight); **wrong step order** (server-side state machine, not hidden buttons); **back/refresh mid-flow** (preserve state, Post/Redirect/Get, idempotent nav); **app killed mid-transaction** (persist intent, reconcile on relaunch); **interruption** — call/notification/switch to SMS for OTP (save instance state, OTP autofill/paste); **rotation/config change** (ViewModel/savedInstanceState); **lose network mid-action** (idempotency + pending/failed/retry states, never silent hang); **airplane mode then reconnect** (offline queue, sync, conflict resolution); **re-submit after timeout** (idempotency no-op); **expired session mid-flow** (silent refresh or clean re-auth back to same place); **two tabs/devices** (optimistic locking/version/merge); **fat-finger wrong field** (input types, inline validation); **wrong date/number/locale** — DD/MM, lakh grouping `1,00,000`, IST UTC+5:30 half-hour offset (locale-aware parse + hints); **paste with +91/spaces/hidden chars** (normalize, don't reject valid data); **emoji/mixed scripts** (utf8mb4 end-to-end, count graphemes); **very long input** (max length client+server); **denied permission then use / grant later** (degrade gracefully, re-check at use-time).
+
+
+Sources: NN/g (5-user test) · Bach/Bolton Heuristic Test Strategy Model (SFDIPOT, SBTM) · Whittaker, Exploratory Software Testing (tours) · Android Developers testing · W3C WCAG 2.1 · Ministry of Testing.
+> Guardrails: destructive, load and chaos testing can take systems down or corrupt data. Test ONLY Saket's own apps, on a staging/test environment, within an authorised window — never run load, stress, chaos or data-destructive tests against production or real customer data without Saket's explicit approval. Real-user/device testing uses only Saket's own device and app build. Use synthetic/test data, never real personal data; snapshot or back up before destructive runs. Report findings privately with a fix and coordinate remediation with the CTO engineering team. Have a defined abort condition and a kill switch before any chaos/load run.
