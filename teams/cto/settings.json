@@ -1,0 +1,40 @@
+{
+  "env": {
+    "CLAUDE_CODE_EXPERIMENTAL_AGENT_TEAMS": "1",
+    "CLAUDE_CODE_MAX_SUBAGENT_SPAWN_DEPTH": "3",
+    "AGENTHQ_LOCAL_MODEL": "qwen3.5"
+  },
+  "permissions": {
+    "allow": [
+      "Bash(checkov *)",
+      "Bash(git diff*)",
+      "Bash(git log*)",
+      "Bash(git status*)",
+      "Bash(gitleaks *)",
+      "Bash(iverilog *)",
+      "Bash(kicad-cli *)",
+      "Bash(make *)",
+      "Bash(npm run *)",
+      "Bash(npm test*)",
+      "Bash(ollama list*)",
+      "Bash(pio check*)",
+      "Bash(pio run*)",
+      "Bash(pio test*)",
+      "Bash(pytest*)",
+      "Bash(python ~/.claude/agenthq/local_llm.py*)",
+      "Bash(semgrep *)",
+      "Bash(terraform fmt*)",
+      "Bash(terraform plan*)",
+      "Bash(terraform validate*)",
+      "Bash(trivy *)",
+      "Bash(verilator *)",
+      "Bash(yosys *)"
+    ],
+    "deny": [
+      "Bash(git push --force*)",
+      "Bash(terraform apply*)",
+      "Bash(terraform destroy*)",
+      "Bash(rm -rf /*)"
+    ]
+  }
+}

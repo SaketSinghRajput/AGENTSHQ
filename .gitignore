@@ -1,0 +1,15 @@
+# runtime state (machine-specific)
+**/.claude/agent-memory/
+**/.claude/agent-memory-local/
+*.log
+dashboard.lock
+status.json
+usage-log.csv
+scans/
+# OS / editor
+Thumbs.db
+desktop.ini
+.DS_Store
+.vscode/
+# keep working-folder structure but not generated instance output
+# (remove these lines if you want to version your working docs)

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>AgentHQ — Live</title>
+<style>
+  :root{--bg:#0b0f17;--card:#151b27;--card2:#1b2332;--line:#263147;--txt:#e6edf6;--dim:#8aa0bd;--accent:#4f8cff;--ok:#2fbf71;--warn:#f0a93b}
+  *{box-sizing:border-box}
+  body{margin:0;font:14px/1.45 ui-sans-serif,system-ui,Segoe UI,Roboto,Arial;background:var(--bg);color:var(--txt)}
+  header{display:flex;align-items:center;gap:14px;padding:16px 22px;border-bottom:1px solid var(--line);position:sticky;top:0;background:rgba(11,15,23,.92);backdrop-filter:blur(6px)}
+  header h1{font-size:17px;margin:0;letter-spacing:.3px}
+  .dot{width:9px;height:9px;border-radius:50%;background:var(--ok);box-shadow:0 0 0 0 rgba(47,191,113,.6);animation:p 2s infinite}
+  @keyframes p{0%{box-shadow:0 0 0 0 rgba(47,191,113,.5)}70%{box-shadow:0 0 0 8px rgba(47,191,113,0)}100%{box-shadow:0 0 0 0 rgba(47,191,113,0)}}
+  .stats{margin-left:auto;display:flex;gap:22px;color:var(--dim)}
+  .stats b{color:var(--txt);font-size:18px;display:block}
+  main{padding:20px 22px;max-width:1100px;margin:0 auto}
+  h2{font-size:12px;text-transform:uppercase;letter-spacing:1.2px;color:var(--dim);margin:22px 0 10px}
+  .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:12px}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:13px 15px}
+  .card.live{border-color:#2d4a7a;background:linear-gradient(180deg,#17233a,#151b27)}
+  .row1{display:flex;align-items:center;gap:8px}
+  .name{font-weight:600}
+  .tag{font-size:10.5px;padding:2px 8px;border-radius:999px;background:var(--card2);color:var(--dim);border:1px solid var(--line)}
+  .task{color:var(--dim);margin-top:7px;font-size:13px;word-break:break-word}
+  .time{margin-left:auto;color:var(--dim);font-variant-numeric:tabular-nums;font-size:12px}
+  .spin{width:8px;height:8px;border-radius:50%;background:var(--accent);animation:p 1.3s infinite}
+  .empty{color:var(--dim);padding:30px;text-align:center;border:1px dashed var(--line);border-radius:12px}
+  .recent .card{opacity:.82}
+  .check{color:var(--ok)}
+  footer{color:#4c5c74;text-align:center;padding:24px;font-size:12px}
+</style>
+</head>
+<body>
+<header>
+  <span class="dot"></span>
+  <h1>AgentHQ — Live Operations</h1>
+  <div class="stats">
+    <div>Working<b id="nActive">0</b></div>
+    <div>Teams active<b id="nTeams">0</b></div>
+    <div>Done (session)<b id="nDone">0</b></div>
+  </div>
+</header>
+<main>
+  <h2>Currently working</h2>
+  <div id="active" class="grid"></div>
+  <h2>Recently finished</h2>
+  <div id="recent" class="grid recent"></div>
+  <footer>Auto-refreshes every 2s · 127.0.0.1:4765 · private to this machine</footer>
+</main>
+<script>
+let TEAMS={};
+const el=id=>document.getElementById(id);
+const esc=s=>(s||"").replace(/[&<>]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;'}[c]));
+const team=n=>TEAMS[n]||"—";
+function hhmmss(s){s=Math.max(0,Math.round(s));const m=Math.floor(s/60),ss=s%60,h=Math.floor(m/60);
+  return h?`${h}h${String(m%60).padStart(2,'0')}m`:`${m}:${String(ss).padStart(2,'0')}`;}
+async function load(){
+  let d; try{d=await (await fetch('/status.json?'+Date.now())).json();}catch(e){return;}
+  const act=Object.values(d.active||{}).sort((a,b)=>a.start-b.start);
+  const now=Date.now()/1000;
+  el('nActive').textContent=act.length;
+  el('nTeams').textContent=new Set(act.map(a=>team(a.name))).size;
+  el('nDone').textContent=(d.recent||[]).length;
+  el('active').innerHTML = act.length? act.map(a=>`
+    <div class="card live">
+      <div class="row1"><span class="spin"></span><span class="name">${esc(a.name)}</span>
+        <span class="tag">${esc(team(a.name))}</span>
+        <span class="time">${hhmmss(now-a.start)}</span></div>
+      <div class="task">${esc(a.task)||'working…'}</div>
+    </div>`).join('') : `<div class="empty">No agents working right now. Start a team with a command like <b>/cto</b>, <b>/cmo</b> or <b>/hq</b>.</div>`;
+  el('recent').innerHTML=(d.recent||[]).map(a=>`
+    <div class="card">
+      <div class="row1"><span class="check">✓</span><span class="name">${esc(a.name)}</span>
+        <span class="tag">${esc(team(a.name))}</span>
+        <span class="time">${hhmmss(a.secs||0)}</span></div>
+      <div class="task">${esc(a.task)||''}</div>
+    </div>`).join('');
+}
+(async()=>{try{TEAMS=await (await fetch('/agent_team.json')).json();}catch(e){}; load(); setInterval(load,2000);})();
+</script>
+</body>
+</html>
