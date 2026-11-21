@@ -1,4 +1,4 @@
-# Installation (Windows)
+# Installation (Windows and macOS)
 
 ## Prerequisites
 - **Claude Code** installed and signed in (`claude --version` should print a version).
@@ -11,6 +11,14 @@ From this repo folder:
 ```bat
 install\Install-Windows.bat
 ```
+
+On **macOS**, double-click `install/Install-Mac.command` in Finder, or run:
+
+```bash
+bash install/Install-Mac.command
+```
+
+(If macOS blocks the double-click because the file was downloaded, use the `bash` command above. Python 3 is `python3` on macOS; the installer checks for it.)
 
 This:
 1. Copies all teams' agents and skills into both the **project** `.claude\` (this repo) and your **user** `~/.claude\` (so commands work everywhere).

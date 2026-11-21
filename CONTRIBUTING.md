@@ -3,7 +3,7 @@
 ## Add or change an agent
 1. Edit or add a file in `teams/<team>/agents/<name>.md` (YAML frontmatter: `name`, `description`, `tools`, `model`, `color`, `memory: project`, `skills:`).
 2. Keep the body short: who it is, what it owns, how it finishes a task.
-3. Re-run `install\Install-Windows.bat` (or just copy the file into `.claude/agents/` — Claude Code hot-reloads within seconds).
+3. Re-run `install\Install-Windows.bat` (Mac: `bash install/Install-Mac.command`) (or just copy the file into `.claude/agents/` — Claude Code hot-reloads within seconds).
 
 ## Add or change a skill
 Add `teams/<team>/skills/<skill>/SKILL.md` (frontmatter: `name`, `description`; body = the standard/checklist). Reference it from an agent's `skills:` list.

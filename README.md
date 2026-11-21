@@ -22,7 +22,7 @@ Built for a solo founder running several ventures (hardware/IoT, SaaS, apps, AI,
 ## Quick start
 
 ```bat
-install\Install-Windows.bat          REM one-time setup
+install\Install-Windows.bat          REM one-time setup (Mac: bash install/Install-Mac.command)
 claude                                REM in a new terminal, in this folder
 /hq                                   REM the front desk routes your request
 ```

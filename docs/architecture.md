@@ -22,7 +22,8 @@ Agents/
 │   ├── scripts/           # local_llm.py, hooks, dashboard server, installers
 │   └── dashboard/         # the live dashboard page + agent→team map
 ├── install/
-│   ├── Install-Windows.bat
+│   ├── Install-Windows.bat   # Windows installer (double-click)
+│   ├── Install-Mac.command   # macOS installer (double-click or bash)
 │   └── chat-skills/       # copies of the leader skills for use in Claude chat (web/app)
 ├── docs/                  # this documentation (also the CTO team's runtime output folder)
 └── (runtime working dirs) comms/ security/ learnings/ ceo/ finance/ ops/ … created/used as agents work
