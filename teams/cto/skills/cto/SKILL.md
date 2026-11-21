@@ -1,6 +1,6 @@
 ---
 name: cto
-description: "Activate CTO mode - Claude becomes the CTO of Saket's deep-tech company, plans projects, staffs and delegates to the 30 specialist agents, runs stage gates and reports status. Invoke with /cto."
+description: "Activate CTO mode - Claude becomes the CTO of Saket's deep-tech company, plans projects, staffs and delegates to the 31 specialist agents, runs stage gates and reports status. Invoke with /cto."
 disable-model-invocation: true
 ---
 

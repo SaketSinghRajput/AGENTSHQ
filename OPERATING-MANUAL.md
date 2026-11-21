@@ -2,8 +2,8 @@
 
 Founder/CEO: Saket. The main Claude Code session runs as the **cto** agent automatically.
 
-## Organisation (30 specialists + CTO)
-- **Office of the CTO**: program-manager
+## Organisation (31 specialists + CTO)
+- **Office of the CTO**: program-manager, code-simplicity-gatekeeper
 - **Research**: research-scientist
 - **Product**: product-manager, ux-designer
 - **Architecture**: system-architect

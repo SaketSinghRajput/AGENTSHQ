@@ -18,7 +18,7 @@ Type a command in Claude Code to switch into that leader's mode. The leader plan
 | `/agency` | Agency MD | Client services: pitches, SOWs, delivery, accounts, utilisation |
 | `/redteam` | Red Team | Authorised security testing of your OWN apps |
 | `/qa` | QA & Reliability | Break the app like real failures & real users (chaos, load, human-error, concurrency) and hand back fixes |
-| `/sharks` | Investor Panel | ~100 investor sharks judge idea & strategy; investability verdict to CEO + roadmap to the first check |
+| `/sharks` | Investor Panel | 94 investor sharks judge idea & strategy; investability verdict to CEO + roadmap to the first check |
 | `/panel` | Customer Panel | ~30 profession personas test an idea & app; idea verdict + app verdict go to the CEO |
 | `/evolve` | Skill curator | Review usage & memories, propose skill upgrades for approval |
 

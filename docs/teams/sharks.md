@@ -1,4 +1,4 @@
-# Investor Panel — the ~100 sharks
+# Investor Panel — the 94 sharks
 
 Command: `/sharks`  ·  Agents: 95  ·  Skills: 7
 
@@ -8,7 +8,7 @@ Reports the **idea verdict** and **strategy verdict** to the CEO, plus a fact-ba
 
 | Agent | Model | Description |
 |---|---|---|
-| `managing-partner` | opus | Chairs the ~100-shark investor panel: picks the relevant sharks, synthesizes their idea + strategy verdicts for the CEO, and delivers the fact-based step-by-step roadmap to the first check. Use to judge investability or plan a raise. |
+| `managing-partner` | opus | Chairs the 94-shark investor panel: picks the relevant sharks, synthesizes their idea + strategy verdicts for the CEO, and delivers the fact-based step-by-step roadmap to the first check. Use to judge investability or plan a raise. |
 | `shark-100x` | haiku | Investor shark: 100X.VC-style iSAFE cohort (accelerator; pre-seed). Judges a startup idea and strategy from this investor's thesis and gives Invest/Maybe/Pass verdicts. |
 | `shark-acad-incubator` | haiku | Investor shark: academic/govt incubator (incubator; idea/pre-seed). Judges a startup idea and strategy from this investor's thesis and gives Invest/Maybe/Pass verdicts. |
 | `shark-agritech-fund` | haiku | Investor shark: agritech fund (sectorfund; thesis-matched). Judges a startup idea and strategy from this investor's thesis and gives Invest/Maybe/Pass verdicts. |

@@ -4,7 +4,7 @@ description: "Managing Partner intake: get the venture, stage and sector; pick t
 ---
 
 1. Get: venture, one-line idea, stage (pre-seed/seed/A), sector, geography, current traction (real numbers), and the ask if any.
-2. Select sharks: the investor types/sectors/stages that actually fit (e.g. seed: angels, networks, micro-VCs, seed VCs, relevant sector funds, non-dilutive) + a few skeptics and a stretch type for blind spots. Usually 12-25, not all ~100 (cost + relevance) unless asked for the full panel.
+2. Select sharks: the investor types/sectors/stages that actually fit (e.g. seed: angels, networks, micro-VCs, seed VCs, relevant sector funds, non-dilutive) + a few skeptics and a stretch type for blind spots. Usually 12-25, not all 94 (cost + relevance) unless asked for the full panel.
 3. Spawn the chosen sharks (light model); give each the idea + strategy (+ deck/numbers if provided). They use `investor-verdict`.
 4. Collect verdicts, run `panel-verdict-synthesis`, report to the CEO. If the founder wants to raise, also run `fundraise-roadmap`. Write `raise/<venture>/PLAN.md`; add a row to `raise/STATUS.md`.
 

@@ -51,7 +51,7 @@ Command: `/cto`  ·  Agents: 32  ·  Skills: 35
 | `beta-program` | Run beta tests with real users or field deployments and triage feedback. Use after alpha sign-off. |
 | `chip-architecture-spec` | Write a chip/IP micro-architecture spec and register map. Use before any RTL. |
 | `cloud-security` | Cloud and IaC security baseline: IAM, network, secrets, logging. Use for any cloud environment. |
-| `cto` | Activate CTO mode - Claude becomes the CTO of Saket's deep-tech company, plans projects, staffs and delegates to the 30 specialist agents, runs stage gates and reports status. Invoke with /cto. |
+| `cto` | Activate CTO mode - Claude becomes the CTO of Saket's deep-tech company, plans projects, staffs and delegates to the 31 specialist agents, runs stage gates and reports status. Invoke with /cto. |
 | `data-engineering` | Data pipelines, datasets, labeling and data contracts. Use for collecting, cleaning or versioning data. |
 | `design-verification` | Chip/FPGA verification with cocotb, Verilator/Icarus, assertions, coverage and SymbiYosys formal. Use to verify any RTL. |
 | `devops-iac` | Infrastructure as code, CI/CD, containers and cost control. Use for cloud, pipelines and environments. |

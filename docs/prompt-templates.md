@@ -324,7 +324,7 @@ Note: this team tests only assets you own and have authorised; it reports privat
 Opens by itself at **http://127.0.0.1:4765/** the moment any team starts working, and shows every active sub-agent, what it's doing, how long it's run, and recent completions. Refreshes every 2 seconds; private to your machine.
 
 - Open it manually any time: run `python "%USERPROFILE%\.claude\agenthq\dashboard_server.py"` then visit the address.
-- It didn't open? Make sure the install step (`set-core-settings.ps1`, run by `Install-All-Teams.bat`) finished, and that Python is on PATH.
+- It didn't open? Make sure the install step (`set-core-settings.ps1`, run by `installInstall-Windows.bat` or `install/Install-Mac.command`) finished, and that Python is on PATH.
 
 ---
 

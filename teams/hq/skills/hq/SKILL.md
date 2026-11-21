@@ -22,7 +22,7 @@ If nothing follows, show this table and ask what Saket needs.
 | /chro | CHRO | HR: hiring, pay, performance, culture, labour codes, POSH |
 | /gc | General Counsel | legal: contracts, corporate, IP, privacy, employment law, disputes |
 | /agency | Agency MD | client services: pitches, SOWs, delivery, accounts, utilisation |
-| `/sharks` | Managing Partner | ~100 investor sharks judge the idea & strategy -> investability verdict to the CEO + step-by-step roadmap to the first check |
+| `/sharks` | Managing Partner | 94 investor sharks judge the idea & strategy -> investability verdict to the CEO + step-by-step roadmap to the first check |
 | `/panel` | Customer Panel Lead | ~30 profession personas test an idea & app, report idea + app verdicts to the CEO |
 | `/qa` | QA & Reliability Lead | break the app like real failures & real users: chaos/load/human-error/concurrency testing, then fixes |
 | /redteam | Red Team Lead | authorised security testing of your OWN apps: find & fix vulnerabilities (web, API, mobile, cloud, IoT, LLM) |
