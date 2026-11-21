@@ -14,7 +14,7 @@ You (founder, final decisions)
 ## Repository layout
 ```
 Agents/
-├── CLAUDE.md              # operating manual every agent reads
+├── OPERATING-MANUAL.md    # operating manual every agent reads (installer links it as CLAUDE.md)
 ├── teams/<name>/
 │   ├── agents/*.md        # specialist subagents (name, model, tools, skills)
 │   └── skills/<skill>/SKILL.md

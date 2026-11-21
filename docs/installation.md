@@ -20,7 +20,7 @@ This:
 Then open a **new** terminal in this folder and run `claude`, then type `/hq`.
 
 ## Using this repo as your working project
-Open `D:\project\Agents` in Claude Code. `CLAUDE.md` at the root is the operating manual every agent reads. Agents write their working output into the runtime folders (`docs/`, `finance/`, `ops/`, `comms/`, `security/`, `learnings/`, …) described in [architecture.md](architecture.md).
+Open this repo folder in Claude Code. `OPERATING-MANUAL.md` at the root is the operating manual every agent reads; the installer creates a local `CLAUDE.md` that imports it so Claude Code loads it automatically. Agents write their working output into the runtime folders (`docs/`, `finance/`, `ops/`, `comms/`, `security/`, `learnings/`, …) described in [architecture.md](architecture.md).
 
 ## Verify
 - `claude` → `/agents` should list ~345 agents.

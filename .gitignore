@@ -17,3 +17,6 @@ desktop.ini
 # Claude Code local files (never publish)
 .claude/
 CLAUDE.md
+# only the installer .bat is published
+*.bat
+!install/Install-Windows.bat

@@ -15,6 +15,9 @@ foreach ($base in @($proj,$user)) {
 # project settings template (agent teams on, routing, permissions)
 $cfg = Join-Path $repo "teams\cto\settings.json"
 if (Test-Path $cfg) { Copy-Item $cfg (Join-Path $proj "settings.json") -Force; Write-Host "[OK] project settings.json" }
+# operating manual: local CLAUDE.md (not versioned) that imports OPERATING-MANUAL.md
+$cm = Join-Path $repo "CLAUDE.md"
+if (-not (Test-Path $cm)) { Set-Content -Path $cm -Value "@OPERATING-MANUAL.md" -Encoding UTF8; Write-Host "[OK] CLAUDE.md -> OPERATING-MANUAL.md" }
 # core settings: env + dashboard + logging hooks, into user scope
 & (Join-Path $repo "engine\scripts\set-core-settings.ps1")
 Write-Host ""
