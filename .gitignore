@@ -13,3 +13,7 @@ desktop.ini
 .vscode/
 # keep working-folder structure but not generated instance output
 # (remove these lines if you want to version your working docs)
+
+# Claude Code local files (never publish)
+.claude/
+CLAUDE.md
